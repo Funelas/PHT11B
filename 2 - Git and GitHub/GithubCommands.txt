@@ -40,3 +40,23 @@ git merge <branch-name> # Note that you must be on the master / main branch
 
 - Deleting Branches - 
 git branch -d <branch-name>
+
+- Connecting Local Repository to Remote Repository -
+git remote add origin <repository-url>
+
+- Change from master to main -
+git branch -M main 
+# -M: Renames a branch.
+This renames the current branch to main.
+
+- Pushed our local repository to the remote repository -
+git push -u origin main
+# -u: Sets the upstream branch for tracking. This pushes to main on origin and sets it as the default branch for future pushes and pulls.
+
+- Cloning Repository - 
+git clone <repository-link>
+
+- Pulling Changes from a Remote Repository -
+git pull origin main 
+
+
