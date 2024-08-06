@@ -7,3 +7,17 @@ git config --global user.email "<email>"
 git config user.name
 git config user.email
 git config --global -e # To check all of the config done to global
+
+# === Initialize Git Repository === #
+git init 
+
+# === Git Three Stages === #
+- Check the status of our files - 
+git status
+
+- Add the files into the Staging Area -
+git add <file_name> or . (. means all)
+
+- Create a commit - 
+git commit -m "<your message / description of the changes you made >"
+
