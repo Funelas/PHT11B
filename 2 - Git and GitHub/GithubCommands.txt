@@ -1,0 +1,9 @@
+# === Configuring Git === #
+git config --global user.name "<username>"
+git config --global user.email "<email>"
+
+# === Checking Username and Email === #
+
+git config user.name
+git config user.email
+git config --global -e # To check all of the config done to global
