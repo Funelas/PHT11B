@@ -21,3 +21,16 @@ git add <file_name> or . (. means all)
 - Create a commit - 
 git commit -m "<your message / description of the changes you made >"
 
+# === View the history of commits === #
+git log --oneline (history of commits)
+git log (more detailed)
+
+# === Branch === #
+- Create a branch -
+git branch <branch-name>
+
+- Show the branches available - 
+git branch -a 
+
+- Switch to an existing branch -
+git switch <branch-name>
