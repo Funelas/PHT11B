@@ -34,3 +34,9 @@ git branch -a
 
 - Switch to an existing branch -
 git switch <branch-name>
+
+- Merge Branches - 
+git merge <branch-name> # Note that you must be on the master / main branch
+
+- Deleting Branches - 
+git branch -d <branch-name>
