@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+<body>
+    <form action="submit_page.php">
+        <h1>Form Example</h1>
+
+        <div>
+            <label for="fullname-id">Full Name:</label>
+            <input type="text" name="user-fullname" id="fullname-id" placeholder="John Doe" required>
+        </div>
+        <div>
+            <label for="email-id">Email:</label>
+            <input type="email" name="user-email" id="email-id" placeholder="johndoe@example.com" required>
+        </div>
+        <div>
+            <label for="password-id">Password:</label>
+            <input type="password" name="user-password" id="password-id" required>
+        </div>
+        <div>
+            <label for="age-id">Age:</label>
+            <input type="number" name="user-age" id="age-id" required max="100" min="18">
+        </div>
+        <div>
+            <label for="gender-id">Gender:</label>
+            <select name="user-gender" id="gender-id">
+                <option value="male">Male</option>
+                <option value="Female">Female</option>
+                <option value="non-conforming">Non-Conforming</option>
+            </select>
+        </div>
+        <div>
+            <h6>Marital Status</h6>
+
+            <input type="radio" name="user-marital-status" id="single-status-id" required>
+            <label for="single-status-id">Single</label>
+
+            <input type="radio" name="user-marital-status" id="married-status-id" required>
+            <label for="married-status-id">Married</label>
+
+            <input type="radio" name="user-marital-status" id="divorced-status-id" required>
+            <label for="divorced-status-id">Divorced</label>
+            
+        </div>
+        <div>
+            <label for="birthday-id">Birthday:</label>
+            <input type="date" name="user-birthday" id="birthday-id">
+        </div>
+        <div>
+            <input type="checkbox" name="user-fave-color" id="red-id" required>
+            <label for="red-id">Red</label>
+
+            <input type="checkbox" name="user-fave-color" id="blue-id" required>
+            <label for="blue-id">Blue</label>
+
+            <input type="checkbox" name="user-fave-color" id="yellow-id" required>
+            <label for="yellow-id">Yellow</label>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    <br>
+    <hr>
+    <h2>Images</h2>
+    <img src="https://gifdb.com/images/high/zenitsu-body-sway-x0lb625xcstx2x0i.gif" alt="Zenitsu-UWU" height="300px">
+    <img src="ganda.jpg" alt="Magandang Dilag" height="300px" >
+</body>
+</html>
