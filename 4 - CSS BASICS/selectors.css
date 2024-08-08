@@ -1,0 +1,66 @@
+/* Element Selector */
+span {
+    color: purple;
+}
+
+/* Class Selector */
+.class-name {
+    color: cyan;
+}
+
+/* ID Selector */
+#id-name {
+    background-color: lightblue;
+}
+
+/* Universal Selector */
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Attribute Selector */
+/* Targetting elements with the href attributes */
+[href] {
+    color: brown;
+}
+/* Targetting specific element with the href attribute (in this case, a element) */
+a[href] {
+    background-color: antiquewhite;
+}
+/* Targetting specific elements with specific href value (in this case, a is the element, and the value is www.google.com*/
+a[href="www.google.com"]{
+    font-weight: bold;
+}
+/* Grouping Selector */
+h1, h2, .parag {
+    color : violet;
+}
+
+/* Descendant Selector */
+/* .ancestor_class_name descendant_tag */
+.ancestor h3{
+    color: olive;
+}
+
+.ancestor p{
+    color: aquamarine;
+}
+/* Pseudo-Class Selector */
+
+button:hover{
+    background-color: black;
+    color: white;
+}
+
+a:visited{
+    color: blue;
+}
+
+/* Pseudo-Element Selector */
+/* #pseudo-element::before{
+    content: "Placed after h3";
+} */
+
+ #pseudo-element::first-letter{
+    color: coral;
+ }

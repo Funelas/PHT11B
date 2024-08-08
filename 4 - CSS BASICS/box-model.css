@@ -1,0 +1,56 @@
+
+
+.box1 {
+    width: 300px;
+    height: 150px;
+    padding-left:10px ;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+}
+
+.box2{
+    /* 
+    1 value = all sides
+    2 values = top and bottom || sides
+    3 values =  top to right to bottom
+    4 values = top to right to bottom to left
+
+    (pattern is that it works clockwise)
+     */
+    padding: 10px 20px 30px 40px;
+}
+
+.box3 {
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.box4 {
+     /* 
+    1 value = all sides
+    2 values = top and bottom || sides
+    3 values =  top to right to bottom
+    4 values = top to right to bottom to left
+
+    (pattern is that it works clockwise)
+     */
+    margin: 10px 20px 30px 40px;
+}
+
+.mix-borders{
+    border-style: dotted dashed solid double;
+    border-radius: 10px;
+}
+
+.circle-container {
+    height: 60px;
+    width: 60px;
+    padding: 30px;
+    font-size: 30px;
+    border-style: solid;
+    border-radius: 50%;
+    text-align: center;
+}
