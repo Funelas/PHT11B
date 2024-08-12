@@ -1,0 +1,32 @@
+.relative{
+    /* relative to its original position */
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background-color: blue;
+}
+
+.absolute{
+    /* relative to its nearest parent element */
+    position: absolute;
+    background-color: chartreuse;
+    top: 0px;
+    left: 0px;
+}
+
+.fixed{
+    /* relative to the viewport */
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    background-color: aqua;
+}
+
+.sticky {
+    /* mix of relative and fixed positioning. It is treated as relative until a specific point or threshold at which point it is then treated as fixed */
+    position: sticky;
+    background-color: red;
+    top: 0px;
+    left: 0px;
+}
+

@@ -1,0 +1,48 @@
+.flexContainer{
+    display: flex;
+    flex-direction: row; /* default value */
+    /* flex-direction: row-reverse; 
+    /* flex-direction: column;
+    flex-direction: column-reverse; */
+
+    /* Relative to the main axis (direction of row) */
+    justify-content: flex-start;  /* default value */
+    /* justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    justify-content: space-around; */
+
+    /* Relative to the cross axis */
+    /* align-items: flex-start;
+    align-items: flex-end;
+    align-items: center;
+    align-items: stretch;  */
+    /* Adjust the height and stretches to occupy the whole container */
+    
+    /* flex-wrap: nowrap;
+    flex-wrap: wrap;
+    flex-wrap: wrap-reverse; */
+
+    /* column-gap: 500px; */
+
+}
+
+/* .flexItem2{
+    align-self: flex-start;
+    align-self: flex-end;
+} */
+
+.flexItem3 {
+    /* flex-grow: 3; */
+    flex-shrink: 3;
+}
+.flexItem2{
+    /* flex-grow: 2; */
+    flex-shrink: 2;
+}
+
+.flexItem1{
+    /* flex-grow: 1; */
+    flex-shrink: 1;
+}

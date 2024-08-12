@@ -1,0 +1,69 @@
+/* Using px */
+.gridContainer{
+    display: grid;
+    grid-template-columns: 200px 200px 200px; /*# of columns = # of values */
+    grid-template-rows: 200px 200px 200px; /*values will reflect the height of the items*/
+}
+
+/* Using auto */
+.gridContainer{
+    display: grid;
+    grid-template-columns: auto auto auto; /* the sizes will adjust with the screen; the bigger the container will get in relation in its content */
+
+}
+
+/* Using percentage (%) */
+.gridContainer{
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 50%;
+}
+
+/* Using Fractions */
+/* DRY = Don't Repeat Yourself */
+.gridContainer{
+    display: grid;
+    grid-template-columns: 1fr; /* use shorthand to avoid repeating */
+    grid-template-columns: repeat(3,1fr);
+    
+}
+
+/* column gap */
+.gridContainer {
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+/* .gridItem1{
+    grid-area: <row-start> / <column-start> / <row-end> / <column-end>
+    NOTE: The rows and columns are not the items itself but the SPACES
+    grid-area: 2 / 2 / 4 / 4;
+} */
+
+/* Media Queries */
+/* 
+    Mobile Devices: Less than 481px
+    iPads or Tablets: 481px - 768px 
+    Small Screens, Laptops: 769px - 1024px
+    Desktop Screens, Large Screen: 1025px - 1200px
+    Extra Large Screens, TV: 1201px and above    
+*/
+/* Media Query for Large Screens */
+@media screen and (min-width: 1025px) {
+    .gridContainer{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+/* Media Query for Medium Screens */
+@media screen and (min-width: 481px)and (max-width: 1024px){
+    .gridContainer{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 480px) {
+    .gridContainer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
